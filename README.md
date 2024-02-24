@@ -13,3 +13,7 @@ The programm ex_pro.py, before the analysis, transforms the file 'Nemo_6670.dat'
 In fact without these command lines (from 1 to 83) python is not able to read the file. After that the programm analyzes and produces 3 images that satisfy the quests.
 
 I hope everything works perfectly.
+
+N.B. I didin't test if everything works with file id_ed25519.txt, but if this doesn't work directly, create a file
+# touch id_ed25519
+and copy everything is in the txt file and after that run 'config'.
