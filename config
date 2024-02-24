@@ -1,0 +1,22 @@
+#!/bin/bash
+eval "$(ssh-agent -s)"
+ssh-add id_ed25519
+git clone git@github.com:Lorenzo-Ciaramella44/Ciaramella.git
+echo "I have created the folder Ciaramella, where you can find my exercises"
+cd Ciaramella
+chmod u+r ex_pro
+chmod u+w ex_pro
+chmod u+x ex_pro
+chmod u+r ex_pro.py
+chmod u+w ex_pro.py
+chmod u+x ex_pro.py
+echo "Now I allowed you to read, modify and execute the program named ex_pro"
+echo "If you want, we can run in this moment the program, do you want to?"
+echo "Select YES or NO"
+read ANSWER
+if [ "$ANSWER" == "YES" ]; then
+	source ex_pro
+	program
+else 
+	echo "Ok, whenever you want tip on you prompt --source ex_pro-- and after that --program-- without including --"
+fi
